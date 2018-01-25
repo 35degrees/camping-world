@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="image/x-icon" rel="shortcut icon" media="" href="//s21.q4cdn.com/284878455/files/favicon.ico">
+  <link type="image/x-icon" rel="icon" media="" href="//s21.q4cdn.com/284878455/files/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link href='http://fonts.googleapis.com/css?family=Monoton:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Cabin:300,400' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="mlstyle.css">
+ 
+<script src="mlcwh.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script id="d3script"></script>
+
+  <title>Camping World Business Model</title>
+</head>
+<body>
+  <div id="intro">
+    <img src="cwhtext2.png" class="sizeDown animated fadeInDown" id="intro-header" alt="">
+    <!-- <h1 id="intro-header" class="animated fadeInDown">CWH</h1>  -->
+    <!-- <h1 id="intro-second" class="animated fadeInDown">Year in Review</h1>
+    <h1 id="intro-third" class="animated fadeInDown">2017</h1> -->
+    <h2 id="intro-text" class="animated fadeIn">Camping World is the domestic leader in new and used RV sales. So why does its business model more resemble Apple's "walled garden" ecosystem than a successful dealership?</h2>
+  <button id="intro-button" onclick="introFade()" class="animated fadeIn">Click to start</button>
+</div>
+
+<div id="container1">
+    <div class="item" id="item1">
+      <img src="mlheadshot3.png" id="ml2">
+    </div>
+    <div class="item" id="item2"><h4 id="mlquote1">"RVs are a product that people love - there's an emotional side without the stress of a car."</h4>
+    <h5>Marcus Lemonis</h5><h5>Camping World CEO</h5><h5>2017</h5>
+  </div>
+   <div class="item" id="item3">
+     <h3 id="article1">
+      RVing has long been a popular and inexpensive way for families to travel, explore the outdoors and have adventures.
+     <br />
+     <br />
+     Sales of RVs fell sharply during the financial crisis, but ever since 2009, their popularity has rebounded sharply. 2017 saw record-shattering sales levels.
+    </h3>
+   </div>
+   <div class="item" id="item4">
+     <div id="chart1">
+   <h2 id="questionuno" class="animated fadeIn">Can you guess about how many RVs were sold in North America in 2017 in total?</h2>
+  <div class="button-row1" id="button-row1">
+      <button class="q-button" id="q-button1a" name="filterPreset" value="0">250,000</button>
+      <button class="q-button" id="q-button1b" name="filterPreset" value="1">500,000</button>
+      <button class="q-button" id="q-button1c" name="filterPreset" value="0">750,000</button>
+      <button class="q-button" id="q-button1d" name="filterPreset" value="0">1 million</button>
+    </div>
+    <button id="continue-button1" onclick="questionUnoFade()" class="animated fadeIn">Continue</button>
+   <svg id="svg1" width="620" height="440"></svg>
+
+   </div>
+  </div>
+</div>
+
+<div id="container2">
+  <div class="item" id="item21">
+  <img src="mlheadshot4.png" id="ml3">
+  </div>
+  <div class="item" id="item22"><h4 id="mlquote2">"Camping World doesn't sell $300,000 RVs - we sell lots of entry level motorhomes."</h4>
+  <h5>Marcus Lemonis</h5><h5>Camping World CEO</h5><h5>2017</h5>
+  </div>
+  <div class="item" id="item23">
+  <h3 id="article2">
+    As the economy recovers, premium RV models are popular among high-income buyers and retirees. Millennials are favoring more budget-friendly towables and trailers.
+    <br />
+    <br />
+    RV sales are rising for both high-end and low-end models, and about 9 million US households now own an RV.
+  </h3>
+  </div>
+  <div class="item" id="item24">
+  <div id="chart2">
+  <h2 id="questiontres" class="animated fadeIn">How do you think the average price of new RV has been trending in the last 5 years?</h2>
+  <div class="button-row3" id="button-row3">
+  <button class="q-button3" id="q-button3a" name="filterPreset" value="0">Rising</button>
+  <button class="q-button3" id="q-button3b" name="filterPreset" value="1">Staying Flat</button>
+  <button class="q-button3" id="q-button3c" name="filterPreset" value="0">Falling</button>
+  <button class="q-button3" id="q-button3d" name="filterPreset" value="0">90</button>
+  </div>
+  <button id="continue-button3" onclick="questionTresFade()" class="animated fadeIn">Continue</button>
+  <svg id="svg2" width="530" height="410"></svg>
+  </div>
+  </div>
+  </div>
+
+  <div id="container3">
+    <div class="item" id="item31">
+    <img src="mlheadshot3.png" id="ml2">
+    </div>
+    <div class="item" id="item32"><h4 id="mlquote3">"RVs are our most important business - nothing gets in the way of that, and nothing compromises it."</h4>
+    <h5>Marcus Lemonis</h5><h5>Camping World CEO</h5><h5>2017</h5>
+    </div>
+    <div class="item" id="item33">
+    <h3 id="article3">
+      Camping World has been a beneficiary of the growing popularity of RVs. The company opened 23 new retail locations between 2014-16.
+      <br />
+    <br />
+    From this expansion, CW's total market share for new RVs rose  from 7% in 2013 to almost 13% in 2017.
+    </h3>
+    </div>
+    <div class="item" id="item34">
+    <div id="chart3">
+    <h2 id="questioncinco" class="animated fadeIn">Over the last five years, about what percent of Camping World's total sales is from new and used RVs?</h2>
+    <div class="button-row5" id="button-row5">
+    <button class="q-button5" id="q-button5a" name="filterPreset" value="0">50%</button>
+    <button class="q-button5" id="q-button5b" name="filterPreset" value="0">60%</button>
+    <button class="q-button5" id="q-button5c" name="filterPreset" value="1">70%</button>
+    <button class="q-button5" id="q-button5d" name="filterPreset" value="0">80%</button>
+    </div>
+    <button id="continue-button5" onclick="questionCincoFade()" class="animated fadeIn">Continue</button>
+    <svg id="svg3" width="650" height="450"></svg>
+    </div>
+    </div>
+    </div>
+
+    <div id="container4">
+      <div class="item" id="item41">
+      <img src="mlheadshot4.png" id="ml3">
+      </div>
+      <div class="item" id="item42"><h4 id="mlquote4">"We don’t care about revenue - we care about selling high margin products and services. If RVs are profitable, thats a bonus."</h4>
+      <h5>Marcus Lemonis</h5><h5>Camping World CEO</h5><h5>2017</h5>
+      </div>
+      <div class="item" id="item43">
+      <h3 id="article4">
+        With every RV purchase, CW can cross-sell their suite of strong brands and services, and grows their customer database.
+        <br />
+        <br />
+        Good Sam is the brand name for the database, which offers discounts, travel assistance and connects RV enthusiasts.
+    </h3>
+      </div>
+      <div class="item" id="item44">
+      <div id="chart4">
+      <h2 id="questionseis" class="animated fadeIn">Which of Camping World's products and services had the highest profit margin (in percent) in 2017?</h2>
+      <div class="button-row6" id="button-row6">
+      <button class="q-button6" id="q-button6a" name="filterPreset" value="0" >New RVs</button>
+      <button class="q-button6" id="q-button6b" name="filterPreset" value="0" >Used RVs</button>
+      <button class="q-button6" id="q-button6c" name="filterPreset" value="0" >Products & Services</button>
+      <button class="q-button6" id="q-button6d" name="filterPreset" value="1" >Financing & Insurance</button>
+      </div>
+      <button id="continue-button6" onclick="questionSeisFade()" class="animated fadeIn">Continue</button>
+      <svg id="svg4" width="700" height="420"></svg>
+      </div>
+      </div>
+      </div>
+      
+      <div id="container5">
+          <div class="item" id="item51">
+          <img src="mlheadshot3.png" id="ml2">
+          </div>
+          <div class="item" id="item52"><h4 id="mlquote5">"We are a data mining company, using RVs, service centers, and parts+accessories to cross-sell Good Sam services to customers in the outdoor leisure space."</h4>
+          <h5>Marcus Lemonis</h5><h5>Camping World CEO</h5><h5>2017</h5>
+          </div>
+          <div class="item" id="item53">
+          <h3 id="article5">
+            Camping World's customer database stands at 3.4 million outdoor enthusiasts.
+            <br />
+    <br />
+            To expand their customer database beyond the RV enthusiast, Camping World made several large acquisitions in 2017.
+        </h3>
+          </div>
+          <div class="item" id="item54">
+          <div id="chart5">
+          <h2 id="questionsev" class="animated fadeIn">Below, you can see how Camping World's four main segments contribute to the growing Good Sam customer database. What kind of businesses are Camping World's four key acquisitions in 2017?
+          </h2>
+          <div class="button-row7" id="button-row7">
+          <button class="q-button7" id="q-button7a" name="filterPreset" value="0" >RV Servicers</button>
+          <button class="q-button7" id="q-button7b" name="filterPreset" value="0" >RV Dealers</button>
+          <button class="q-button7" id="q-button7c" name="filterPreset" value="1" >Outdoor Oufitters</button>
+          <button class="q-button7" id="q-button7d" name="filterPreset" value="0" >RV Parks</button>
+          </div>
+          <button id="continue-button7" onclick="questionSevFade()" class="animated fadeIn">Continue</button>
+          
+          <svg id="svg5" width="1000" height="540"></svg>
+          <svg id="svg6" width="1000" height="540"></svg>
+          </div>
+          </div>
+          </div>
+          <div id="closeText">
+              <h3 id="closeh3">Bolstered by the popularity of RVing, Camping World's business is growing quickly. Cross-selling their higher margin products and services to their Good Sam members is Camping World's secret to success.</h3>
+            </div> 
+            <div id="finalText">
+              <h3 id="finalh3">Thanks for reading!</h3>
+              <h4>Learn more about Camping World <a href="http://www.campingworld.com/aboutus/" target="_blank">here</a>.</h4>
+            </div> 
+</body>
+</html>
